@@ -2,9 +2,9 @@
 // versions:
 // 	protoc-gen-go v1.27.1
 // 	protoc        (unknown)
-// source: %%wp_project%%/v1/%%wp_project%%.proto
+// source: hpotato/v1/hpotato.proto
 
-package %%wp_project%%v1
+package hpotatov1
 
 import (
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
@@ -33,7 +33,7 @@ type HelloWorldRequest struct {
 func (x *HelloWorldRequest) Reset() {
 	*x = HelloWorldRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_%%wp_project%%_v1_%%wp_project%%_proto_msgTypes[0]
+		mi := &file_hpotato_v1_hpotato_proto_msgTypes[0]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -46,7 +46,7 @@ func (x *HelloWorldRequest) String() string {
 func (*HelloWorldRequest) ProtoMessage() {}
 
 func (x *HelloWorldRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_%%wp_project%%_v1_%%wp_project%%_proto_msgTypes[0]
+	mi := &file_hpotato_v1_hpotato_proto_msgTypes[0]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -59,7 +59,7 @@ func (x *HelloWorldRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use HelloWorldRequest.ProtoReflect.Descriptor instead.
 func (*HelloWorldRequest) Descriptor() ([]byte, []int) {
-	return file_%%wp_project%%_v1_%%wp_project%%_proto_rawDescGZIP(), []int{0}
+	return file_hpotato_v1_hpotato_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *HelloWorldRequest) GetMessage() string {
@@ -85,7 +85,7 @@ type HelloWorldResponse struct {
 func (x *HelloWorldResponse) Reset() {
 	*x = HelloWorldResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_%%wp_project%%_v1_%%wp_project%%_proto_msgTypes[1]
+		mi := &file_hpotato_v1_hpotato_proto_msgTypes[1]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -98,7 +98,7 @@ func (x *HelloWorldResponse) String() string {
 func (*HelloWorldResponse) ProtoMessage() {}
 
 func (x *HelloWorldResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_%%wp_project%%_v1_%%wp_project%%_proto_msgTypes[1]
+	mi := &file_hpotato_v1_hpotato_proto_msgTypes[1]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -111,7 +111,7 @@ func (x *HelloWorldResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use HelloWorldResponse.ProtoReflect.Descriptor instead.
 func (*HelloWorldResponse) Descriptor() ([]byte, []int) {
-	return file_%%wp_project%%_v1_%%wp_project%%_proto_rawDescGZIP(), []int{1}
+	return file_hpotato_v1_hpotato_proto_rawDescGZIP(), []int{1}
 }
 
 func (x *HelloWorldResponse) GetConfigMessage() string {
@@ -135,9 +135,9 @@ func (x *HelloWorldResponse) GetNow() *timestamppb.Timestamp {
 	return nil
 }
 
-var File_%%wp_project%%_v1_%%wp_project%%_proto protoreflect.FileDescriptor
+var File_hpotato_v1_hpotato_proto protoreflect.FileDescriptor
 
-var file_%%wp_project%%_v1_%%wp_project%%_proto_rawDesc = []byte{
+var file_hpotato_v1_hpotato_proto_rawDesc = []byte{
 	0x0a, 0x2a, 0x67, 0x6f, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x61, 0x72, 0x63, 0x68, 0x65, 0x74, 0x79,
 	0x70, 0x65, 0x2f, 0x76, 0x31, 0x2f, 0x67, 0x6f, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x61, 0x72, 0x63,
 	0x68, 0x65, 0x74, 0x79, 0x70, 0x65, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x12, 0x13, 0x67, 0x6f,
@@ -184,27 +184,27 @@ var file_%%wp_project%%_v1_%%wp_project%%_proto_rawDesc = []byte{
 }
 
 var (
-	file_%%wp_project%%_v1_%%wp_project%%_proto_rawDescOnce sync.Once
-	file_%%wp_project%%_v1_%%wp_project%%_proto_rawDescData = file_%%wp_project%%_v1_%%wp_project%%_proto_rawDesc
+	file_hpotato_v1_hpotato_proto_rawDescOnce sync.Once
+	file_hpotato_v1_hpotato_proto_rawDescData = file_hpotato_v1_hpotato_proto_rawDesc
 )
 
-func file_%%wp_project%%_v1_%%wp_project%%_proto_rawDescGZIP() []byte {
-	file_%%wp_project%%_v1_%%wp_project%%_proto_rawDescOnce.Do(func() {
-		file_%%wp_project%%_v1_%%wp_project%%_proto_rawDescData = protoimpl.X.CompressGZIP(file_%%wp_project%%_v1_%%wp_project%%_proto_rawDescData)
+func file_hpotato_v1_hpotato_proto_rawDescGZIP() []byte {
+	file_hpotato_v1_hpotato_proto_rawDescOnce.Do(func() {
+		file_hpotato_v1_hpotato_proto_rawDescData = protoimpl.X.CompressGZIP(file_hpotato_v1_hpotato_proto_rawDescData)
 	})
-	return file_%%wp_project%%_v1_%%wp_project%%_proto_rawDescData
+	return file_hpotato_v1_hpotato_proto_rawDescData
 }
 
-var file_%%wp_project%%_v1_%%wp_project%%_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
-var file_%%wp_project%%_v1_%%wp_project%%_proto_goTypes = []interface{}{
-	(*HelloWorldRequest)(nil),     // 0: %%wp_project%%.v1.HelloWorldRequest
-	(*HelloWorldResponse)(nil),    // 1: %%wp_project%%.v1.HelloWorldResponse
+var file_hpotato_v1_hpotato_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
+var file_hpotato_v1_hpotato_proto_goTypes = []interface{}{
+	(*HelloWorldRequest)(nil),     // 0: hpotato.v1.HelloWorldRequest
+	(*HelloWorldResponse)(nil),    // 1: hpotato.v1.HelloWorldResponse
 	(*timestamppb.Timestamp)(nil), // 2: google.protobuf.Timestamp
 }
-var file_%%wp_project%%_v1_%%wp_project%%_proto_depIdxs = []int32{
-	2, // 0: %%wp_project%%.v1.HelloWorldResponse.now:type_name -> google.protobuf.Timestamp
-	0, // 1: %%wp_project%%.v1.%%Wp_project%%Service.HelloWorld:input_type -> %%wp_project%%.v1.HelloWorldRequest
-	1, // 2: %%wp_project%%.v1.%%Wp_project%%Service.HelloWorld:output_type -> %%wp_project%%.v1.HelloWorldResponse
+var file_hpotato_v1_hpotato_proto_depIdxs = []int32{
+	2, // 0: hpotato.v1.HelloWorldResponse.now:type_name -> google.protobuf.Timestamp
+	0, // 1: hpotato.v1.HpotatoService.HelloWorld:input_type -> hpotato.v1.HelloWorldRequest
+	1, // 2: hpotato.v1.HpotatoService.HelloWorld:output_type -> hpotato.v1.HelloWorldResponse
 	2, // [2:3] is the sub-list for method output_type
 	1, // [1:2] is the sub-list for method input_type
 	1, // [1:1] is the sub-list for extension type_name
@@ -212,13 +212,13 @@ var file_%%wp_project%%_v1_%%wp_project%%_proto_depIdxs = []int32{
 	0, // [0:1] is the sub-list for field type_name
 }
 
-func init() { file_%%wp_project%%_v1_%%wp_project%%_proto_init() }
-func file_%%wp_project%%_v1_%%wp_project%%_proto_init() {
-	if File_%%wp_project%%_v1_%%wp_project%%_proto != nil {
+func init() { file_hpotato_v1_hpotato_proto_init() }
+func file_hpotato_v1_hpotato_proto_init() {
+	if File_hpotato_v1_hpotato_proto != nil {
 		return
 	}
 	if !protoimpl.UnsafeEnabled {
-		file_%%wp_project%%_v1_%%wp_project%%_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_hpotato_v1_hpotato_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*HelloWorldRequest); i {
 			case 0:
 				return &v.state
@@ -230,7 +230,7 @@ func file_%%wp_project%%_v1_%%wp_project%%_proto_init() {
 				return nil
 			}
 		}
-		file_%%wp_project%%_v1_%%wp_project%%_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_hpotato_v1_hpotato_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*HelloWorldResponse); i {
 			case 0:
 				return &v.state
@@ -247,18 +247,18 @@ func file_%%wp_project%%_v1_%%wp_project%%_proto_init() {
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_%%wp_project%%_v1_%%wp_project%%_proto_rawDesc,
+			RawDescriptor: file_hpotato_v1_hpotato_proto_rawDesc,
 			NumEnums:      0,
 			NumMessages:   2,
 			NumExtensions: 0,
 			NumServices:   1,
 		},
-		GoTypes:           file_%%wp_project%%_v1_%%wp_project%%_proto_goTypes,
-		DependencyIndexes: file_%%wp_project%%_v1_%%wp_project%%_proto_depIdxs,
-		MessageInfos:      file_%%wp_project%%_v1_%%wp_project%%_proto_msgTypes,
+		GoTypes:           file_hpotato_v1_hpotato_proto_goTypes,
+		DependencyIndexes: file_hpotato_v1_hpotato_proto_depIdxs,
+		MessageInfos:      file_hpotato_v1_hpotato_proto_msgTypes,
 	}.Build()
-	File_%%wp_project%%_v1_%%wp_project%%_proto = out.File
-	file_%%wp_project%%_v1_%%wp_project%%_proto_rawDesc = nil
-	file_%%wp_project%%_v1_%%wp_project%%_proto_goTypes = nil
-	file_%%wp_project%%_v1_%%wp_project%%_proto_depIdxs = nil
+	File_hpotato_v1_hpotato_proto = out.File
+	file_hpotato_v1_hpotato_proto_rawDesc = nil
+	file_hpotato_v1_hpotato_proto_goTypes = nil
+	file_hpotato_v1_hpotato_proto_depIdxs = nil
 }

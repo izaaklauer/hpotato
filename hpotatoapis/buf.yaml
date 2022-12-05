@@ -1,5 +1,5 @@
 version: v1
-name: buf.build/acme/%%wp_project%%apis
+name: buf.build/acme/hpotatoapis
 deps:
   - buf.build/googleapis/googleapis
 lint:

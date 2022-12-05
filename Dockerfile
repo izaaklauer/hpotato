@@ -13,7 +13,7 @@ RUN go mod download
 
 COPY . ./
 
-RUN go build -o /tmp/%%wp_project%% cmd/%%wp_project%%-api/main.go
+RUN go build -o /tmp/hpotato cmd/hpotato-api/main.go
 
 #--------------------------------------------------------------------
 # final image
@@ -24,6 +24,6 @@ FROM alpine:3.17
 # Config file will be delivered here at runtime by waypoint
 RUN mkdir /opt/config
 
-COPY --from=builder /tmp/%%wp_project%% /%%wp_project%%
+COPY --from=builder /tmp/hpotato /hpotato
 EXPOSE 8080
-CMD [ "/%%wp_project%%" ]
+CMD [ "/hpotato" ]

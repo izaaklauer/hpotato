@@ -5,7 +5,7 @@ start: proto/generate
 
 .PHONY: serve
 serve: # Runs the server for local development
-	CONFIG_PATH=config/config_local.hcl go run cmd/%%wp_project%%-api/main.go
+	CONFIG_PATH=config/config_local.hcl go run cmd/hpotato-api/main.go
 
 .PHONY: proto/lint
 proto/lint: # Lint protobufs
