@@ -1,0 +1,28 @@
+syntax = "proto3";
+package %%wp_project%%.v1;
+
+import "google/protobuf/timestamp.proto";
+
+service %%Wp_project%%Service {
+
+  // HelloWorld is the default rpc. Feel free to delete.
+  rpc HelloWorld(HelloWorldRequest) returns (HelloWorldResponse) {}
+
+  // your rpcs here...
+}
+
+message HelloWorldRequest {
+  // message will be echoed in the response
+  string message = 1;
+}
+
+message HelloWorldResponse {
+  // Statically configured message
+  string config_message = 1;
+
+  // Same message as on the request
+  string request_message = 2;
+
+  // Current time
+  google.protobuf.Timestamp now = 3;
+}

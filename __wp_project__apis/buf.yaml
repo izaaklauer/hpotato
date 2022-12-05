@@ -1,0 +1,10 @@
+version: v1
+name: buf.build/acme/%%wp_project%%apis
+deps:
+  - buf.build/googleapis/googleapis
+lint:
+  use:
+    - DEFAULT
+breaking:
+  use:
+    - FILE
